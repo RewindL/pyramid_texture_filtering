@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Pyramid Texture Filtering</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+    <div class="title">
+      <b>Pyramid Texture Filtering</b>
+    </div>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="http://zhangqing-home.net/" target="_blank">Qing Zhang</a><sup>1</sup>,&nbsp;
+    <a href="https://github.com/RewindL/" target="_blank">Hao Jiang</a><sup>1</sup>,&nbsp;
+    <a href="" target="_blank">Yongwei Nie</a><sup>2</sup>,&nbsp;
+    <a href="http://isee.sysu.edu.cn/~zhwshi/" target="_blank">Wei-Shi Zheng</a><sup>*1</sup>,&nbsp;
+  </div>
+  <div class="institution">
+    <sup>1</sup>Sun Yat-sen University,&nbsp;
+    <sup>2</sup>South China University of Technology&nbsp;
+  </div>
+  <br>
+  <div class="institution">
+    Accepted by <a href="https://s2023.siggraph.org/" target="_blank">SIGGRAPH 2023</a>
+  </div>
+  <div class="link">
+    <a href="" target="_blank">[Paper]</a>&nbsp;
+    <a href="https://github.com/RewindL/pyramid_texture_filtering" target="_blank">[Code]</a>
+  </div>
+  <div class="teaser">
+    <img src="figures/teaser.png" style="width: 100%;">
+    <br>
+    <br>
+    <font size="3">
+      We demonstrate texture filtering (also referred to as structure-preserving filtering) based on Gaussian and Laplacian pyramids, which, unlike previous work, does not rely on any explicit measures to distinguish texture from structure, but can effectively deal with previously challenging large-scale and high-contrast textures. Top: input images with diverse types of textures. Bottom: texture filtered results produced by our method.
+    </font>
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Abstract</div>
+  <div class="body">
+    We present a simple but effective technique to smooth out textures while
+    preserving the prominent image structures. Our method is built upon a
+    key observation—the coarsest level in a Gaussian pyramid often naturally
+    eliminates textures and summarizes the main image structures. This inspires
+    our central idea for texture filtering, which is to progressively upsample
+    the very low-resolution coarsest Gaussian pyramid level to a full-resolution
+    texture smoothing result with well-preserved structures, under the guidance
+    of each fine-scale Gaussian pyramid level and its associated Laplacian pyramid level. We show that our approach is effective to separate structure from
+    texture of different scales, local contrasts, and forms, without degrading
+    structures or introducing visual artifacts. We also demonstrate the applicability of our method on various applications including detail enhancement,
+    image abstraction, HDR tone mapping, inverse halftoning, and LDR image enhancement.
+  </div>
+  <div class="link">
+    <a href="" target="_blank">[Paper]</a>&nbsp; &nbsp;
+    <a href="" target="_blank">[Supplementary]</a>&nbsp; &nbsp;
+	  <a href="https://github.com/RewindL/pyramid_texture_filtering" target="_blank">[Code]</a>&nbsp; &nbsp;
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+</body>
+</html>
