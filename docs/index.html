@@ -11,6 +11,8 @@
   <link href="./assets/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/font.css" rel="stylesheet" type="text/css">
   <link href="./assets/style.css" rel="stylesheet" type="text/css">
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <!-- === Header Ends === -->
 
@@ -85,12 +87,12 @@
     <br>
     <br>
     <font size="3">
-      Overview of our approach. Given an input image $I$, we first build its Gaussian and Laplacian pyramids {$G_ℓ$ } and {$L_ℓ$ }. 
-      Next, we upsample the coarsest Gaussian pyramid level $G_N$ ($G_N = R_N$ ) to an intermediate texture smoothing image $R_{N-1}$ at the previous finer scale. 
-      This is achieved by a pyramid-guided structure-aware upsampling (PSU) taking $G_{N-1}$ and $L_{N-1}$ as guidance.
-      The resulting $R_{N-1}$ is then subjected to the same upsampling process guided by $G_{N-2}$ and $L_{N-2}$. 
-      The above upsampling cycle is repeated multiple times until a full-resolution texture smoothing image $R_0$ is finally obtained. $JBF$ refers to joint bilateral filtering, 
-      and the symbol $↑$ in $JBF^↑$ indicates increase in spatial resolution of the output.
+      Overview of our approach. Given an input image \(I\), we first build its Gaussian and Laplacian pyramids {\(G_ℓ\) } and {\(L_ℓ\) }. 
+      Next, we upsample the coarsest Gaussian pyramid level \(G_N\) (\(G_N = R_N\)) to an intermediate texture smoothing image \(R_{N-1}\) at the previous finer scale. 
+      This is achieved by a pyramid-guided structure-aware upsampling (PSU) taking \(G_{N-1}\) and \(L_{N-1}\) as guidance.
+      The resulting \(R_{N-1}\) is then subjected to the same upsampling process guided by \(G_{N-2}\) and \(L_{N-2}\). 
+      The above upsampling cycle is repeated multiple times until a full-resolution texture smoothing image \(R_0\) is finally obtained. \(JBF\) refers to joint bilateral filtering, 
+      and the symbol \(↑\) in \(JBF^↑\) indicates increase in spatial resolution of the output.
     </font>
   </div>
     
