@@ -1,20 +1,3 @@
-% Contruction of Laplacian pyramid
-%
-% Arguments:
-%   image 'I'
-%   'nlev', number of levels in the pyramid (optional)
-%   subwindow indices 'subwindow', given as [r1 r2 c1 c2] (optional) 
-%
-% tom.mertens@gmail.com, August 2007
-% sam.hasinoff@gmail.com, March 2011  [modified to handle subwindows]
-%
-%
-% More information:
-%   'The Laplacian Pyramid as a Compact Image Code'
-%   Burt, P., and Adelson, E. H., 
-%   IEEE Transactions on Communication, COM-31:532-540 (1983). 
-%
-
 function [G_pyr, L_pyr] = pyramid(I,nlev,scale,sigma)
 
 r = size(I,1);

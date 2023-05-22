@@ -1,22 +1,3 @@
-% BILATERALFILTER Two dimensional bilateral filtering.
-%
-%    This function implements 2-D bilateral filtering using the method
-%    outlined in:
-%
-%        C. Tomasi and R. Manduchi. Bilateral Filtering for Gray and Color
-%        Images. In Proceedings of the IEEE International Conference on
-%        Computer Vision, 1998. 
-%
-%    B = bfilter2(A, W, SIGMA_S, SIGMA_R) performs 2-D bilateral filtering
-%    for color image A. A should be a double precision matrix with
-%    normalized values in the closed interval [0,1]. The half-size of the
-%    Gaussian bilateral filter window is defined by W. The spatial-domain
-%    standard deviation is given by SIGMA_S and the range-domain standard
-%    deviation is given by SIGMA_R.
-%
-% JiaXian Yao, UC Berkeley, November 2016 (modified based on Douglas R.
-% Lanman, Brown University, September 2006).
-
 function B = bilateralFilter(A, G, w, sigma_s, sigma_r)
     
     % Pre-compute the Gaussian spatial kernel
