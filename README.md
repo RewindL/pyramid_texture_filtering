@@ -2,7 +2,7 @@
 
 This code is the implementation of [SIGGRAPH 2023](https://s2023.siggraph.org/) paper "Pyramid Texture Filtering".
 
-### [Paper](https://arxiv.org/abs/2305.06525)  [Project](https://rewindl.github.io/pyramid_texture_filtering/) 
+### [[Paper]](https://arxiv.org/abs/2305.06525)  [[Project]](https://rewindl.github.io/pyramid_texture_filtering/) 
 
 ## Usage:
   - Put test images into `figures` folder and set `img_name` , `sigma_s` and `sigma_r` in `demo.m`.
