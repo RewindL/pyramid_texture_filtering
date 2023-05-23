@@ -21,7 +21,7 @@ end
 R=G{size(G,1)};
 for l=size(G,1)-1:-1:1
     adaptive_sigma_s = sigma_s*power(scale,l-1);
-    w1 = ceil(adaptive_sigma_s*2.0+1); % w1 = 3;
+    w1 = ceil(adaptive_sigma_s*0.5+1); % w1 = 3;
     w2 = ceil(adaptive_sigma_s*2.0+1);
 
     % upsample
