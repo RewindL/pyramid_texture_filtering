@@ -1,7 +1,7 @@
 close all;
 
 % I\O setting
-input_path = 'figures/';
+input_path = 'input/';
 output_path = 'output/';
 if exist(output_path, 'dir')==0 
     mkdir(output_path);
