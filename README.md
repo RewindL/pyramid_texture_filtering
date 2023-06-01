@@ -18,9 +18,9 @@ This MATLAB code is the implementation of [SIGGRAPH 2023](https://s2023.siggraph
     author  = {Zhang, Qing and Jiang, Hao and Nie, Yongwei and Zheng, Wei-Shi},
     journal = {ACM Transactions on Graphics (Proceedings of ACM SIGGRAPH 2023)},
     year    = {2023},
-    volume  = {},
-    number  = {},
-    pages   = {}
+    volume  = {42},
+    number  = {4},
+    pages   = {1-11}
 }
 ```
 
